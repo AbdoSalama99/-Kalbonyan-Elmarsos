@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+.container {
+  width: 825px;
+  margin: 40px auto;
+  border: 7px solid black;
+  position: relative;
+}
+/* ///////////////////////////////////////////////////////////// */
+/* this is for challenge 3 */
+.logo {
+  background-color: #ec2f2f;
+  display: inline-block;
+  padding: 7px 15px;
+  position: absolute;
+  text-align: center;
+  top: -21px;
+  left: -45px;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* ///////////////////////////////////////////////////////// */
+.container .main-heading {
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #eee;
+  font-size: 22px;
+  padding: 20px;
+}
+.price {
+  font-size: 24px;
+}
+.free {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #777;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+/* .info:link {
+  display: block;
+  margin-bottom: 30px;
+} */
+.info:link,
+.info:visited {
+  color: black;
+}
+.info:hover,
+.info:active {
+  text-decoration: none;
+}
+.product-details {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 20px 0 25px;
+}
+.product-list {
+  list-style-type: square;
+}
+.product-list li {
+  margin: 0px 0px 15px 20px;
+}
+.cart-btn {
+  background: black;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  border: none;
+  border-top: 5px solid black;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+}
+.cart-btn:hover {
+  background-color: white;
+  color: black;
+}
+/* this is for the challenge 3 */
+/* /////////////////////////////////////////////////////////////////////// */
+.zero {
+  margin: 20px 0px;
+  /* background-color: #777; */
+  width: 100%;
+  height: 25px;
+}
+.zero .one {
+  background-color: black;
+}
+.zero .two {
+  background-color: rgb(66, 91, 228);
+}
+.zero .three {
+  background-color: red;
+}
+.zero .four {
+  background-color: yellow;
+}
+
+.zero .five {
+  background-color: brown;
+}
+.zero .six {
+  background-color: aqua;
+}
+.box {
+  display: inline-block;
+  margin-right: 20px;
+  width: 25px;
+  height: 25px;
+}
+/* ///////////////////////////////////////////////////////////////////// */

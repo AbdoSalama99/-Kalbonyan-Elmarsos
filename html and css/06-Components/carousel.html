@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700&family=Inter:wght@400;500;700&family=Open+Sans:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,200;0,300;0,400;0,700;0,800;1,100;1,200;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /*
+        SPACING SYSTEM (px)
+        2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+        FONT SIZE SYSTEM (px)
+        10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+        */
+      /* main color:#037f5b
+        gray color:#343a40
+        */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Inter", sans-serif;
+        color: #343a40;
+        line-height: 1;
+      }
+      .carousel {
+        width: 800px;
+        margin: 100px auto;
+        background-color: #037f5b;
+        display: flex;
+        gap: 98px;
+        padding: 24px;
+        padding-left: 96px;
+        padding-right: 48px;
+        border-radius: 4px;
+        position: relative;
+      }
+      img {
+        height: 220px;
+        transform: scale(1.5);
+        border-radius: 4px;
+        box-shadow: 0 12px 24px rgb(0 0 0 / 25%);
+      }
+      .testimonial-text {
+        color: #e6fcf5;
+        font-size: 20px;
+        line-height: 1.5;
+        margin-bottom: 16px;
+      }
+      .testimonial-author {
+        color: #c3fae8;
+        font-size: 14px;
+        margin-bottom: 4px;
+      }
+      .testimonial-jop {
+        color: #c3fae8;
+        font-size: 12px;
+      }
+      .btn {
+        position: absolute;
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        border: none;
+        top: 50%;
+        box-shadow: 0px 12px 24px rgb(0 0 0 / 25%);
+        cursor: pointer;
+      }
+      .btn--left {
+        left: 0;
+        color: #037f5b;
+        transform: translate(-50%, -50%);
+      }
+      .btn--right {
+        right: 0;
+        color: #037f5b;
+        transform: translate(50%, -50%);
+      }
+      .btn-icon {
+        width: 24px;
+        height: 24px;
+      }
+      .dots {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, 48px);
+        display: flex;
+        gap: 12px;
+      }
+      .dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: white;
+        border: 2px solid #037f5b;
+      }
+      .dot--fill {
+        background-color: #037f5b;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="carousel">
+      <img src="./istockphoto-879119654-612x612.jpg" alt="" />
+      <blockquote class="testimonial">
+        <p class="testimonial-text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. quas
+          excepturi nostrum consequatur? Veritatis vel.
+        </p>
+        <p class="testimonial-author">Abdo</p>
+        <p class="testimonial-jop">Software Engineer</p>
+      </blockquote>
+      <button class="btn btn--left">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="btn-icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M15 19l-7-7 7-7"
+          ></path>
+        </svg>
+      </button>
+      <button class="btn btn--right">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="btn-icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5l7 7-7 7"
+          ></path>
+        </svg>
+      </button>
+      <div class="dots">
+        <button class="dot dot--fill">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+      </div>
+    </div>
+  </body>
+</html>

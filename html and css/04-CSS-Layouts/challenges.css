@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+.container {
+  width: 830px;
+  margin: 120px auto;
+  border: 12px solid black;
+  position: relative;
+}
+/* ///////////////////////////////////////////////////////////// */
+/* this is for challenge 3 */
+.logo {
+  background-color: #ec2f2f;
+  display: inline-block;
+  padding: 7px 15px;
+  position: absolute;
+  text-align: center;
+  top: -21px;
+  left: -45px;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* ///////////////////////////////////////////////////////// */
+.container .main-heading {
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #eee;
+  font-size: 22px;
+  padding: 20px;
+}
+.price {
+  font-size: 24px;
+}
+.free {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #777;
+  font-weight: bold;
+  /* margin-bottom: 20px; */
+}
+
+/* .info:link {
+  display: block;
+  margin-bottom: 30px;
+} */
+.info:link,
+.info:visited {
+  color: black;
+}
+.info:hover,
+.info:active {
+  text-decoration: none;
+}
+.product-details {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 20px 0 25px;
+}
+.product-list {
+  list-style-type: square;
+}
+.product-list li {
+  margin: 25px 17px;
+}
+.cart-btn {
+  background: black;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  border: none;
+  border-top: 12px solid black;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+}
+.cart-btn:hover {
+  background-color: white;
+  color: black;
+}
+/* this is for the challenge 3 */
+/* /////////////////////////////////////////////////////////////////////// */
+.zero {
+  margin: 20px 0px;
+  /* background-color: #777; */
+  width: 100%;
+  height: 25px;
+  display: flex;
+}
+.zero .one {
+  background-color: black;
+}
+.zero .two {
+  background-color: rgb(66, 91, 228);
+}
+.zero .three {
+  background-color: red;
+}
+.zero .four {
+  background-color: yellow;
+}
+
+.zero .five {
+  background-color: brown;
+}
+.zero .six {
+  background-color: aqua;
+}
+.box {
+  /* display: inline-block; */
+  margin-right: 10px;
+  width: 25px;
+  height: 25px;
+}
+
+/* ///////////////////////////////////////////////////////////////////// */
+/* callenge number 1 in the layout section */
+/* .box1 {
+  float: left;
+}
+.box2 {
+  width: 240px;
+  float: left;
+  margin: 15px 30px;
+  /* background-color: royalblue; 
+}
+.box3 {
+  width: 240px;
+  float: right;
+}
+.free + p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+.box2 .free {
+  float: right;
+  margin-top: -22px;
+}
+/* .clearfix {
+  background-color: royalblue;
+} 
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+} */
+
+/* ///////////////////////////////////////////////////////////////////// */
+/* callenge number 2 in the layout section 
+.clearfix {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.box1,
+.box2,
+.box3 {
+  flex: 0 0 30%;
+  flex: 1;
+}
+/////////////////////////////////////////////*/
+.dec-praph {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.dec-praph + p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+/* /////////////////////////////////////////////////// */
+/* callenge number 3 in the layout section */
+.container {
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr;
+  column-gap: 40px;
+  align-items: center;
+}
+.main-heading {
+  grid-column: 1/-1;
+}
+.cart-btn {
+  grid-column: 1/-1;
+}
